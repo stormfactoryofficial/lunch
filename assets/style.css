@@ -1,0 +1,80 @@
+@font-face {
+	font-family: 'LINESeedKR-Th';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Th.woff2') format('woff2');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'LINESeedKR-Rg';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Rg.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'LINESeedKR-Bd';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+}
+
+:root {
+	--border-radius: 10px;
+	--purple-color: #6c36b5;
+	--max-width: 400px;
+}
+
+body {
+	font-family: 'LINESeedKR-Rg';
+}
+
+h1, h2, h3, h4, ul, li, p { 
+  margin: 0; 
+}
+
+ul[role=list] {
+  list-style: none;
+  padding: 0;
+}
+
+a[role=button] {
+	text-decoration: none;
+}
+
+.text-gothic-bold {
+	font-family: 'LINESeedKR-Bd';
+}
+
+.text-gothic-regular {
+	font-family: 'LINESeedKR-Rg';
+}
+
+.container {
+	width: 100%;
+	max-width: var(--max-width);
+	min-width: 300px;
+	margin: auto;
+	padding: 0;
+}
+
+.button {
+	color: #fff;
+	font-family: 'LINESeedKR-Bd';
+	border-radius: var(--border-radius);
+	display: flex;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.button:hover {
+	color: #fff;
+}
+
+.bg-purple {
+	background-color: var(--purple-color);
+}
+
+.muted {
+	color: #999;
+}

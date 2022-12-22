@@ -1,0 +1,14 @@
+node_modules
+*.log*
+*.swp
+*.swo
+.nuxt
+.nitro
+.cache
+.output
+.env
+dist
+.token
+.env
+htaccess
+build.sh
