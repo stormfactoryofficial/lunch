@@ -5,7 +5,8 @@ Weekly Project - Lunch
 
 ### 프로그램
 
-내 위치를 입력하면 음식의 종류를 랜덤으로 골라 가까운 음식점 정보를 제공하는 애플리케이션
+내 위치를 입력하면 음식의 종류를 랜덤으로 골라 가까운 음식점 정보를 제공하는 애플리이션
+아직 버그도 많고.. 전혀 유용하지 않은 상태. 고도화 필요.
 
 애플리케이션 링크 : https://weekly.stormfactory.co.kr/lunch/ 
 
@@ -17,10 +18,11 @@ Weekly Project - Lunch
 
 ### 프로그램 사용 시
 
-* 프로젝트 루트 디렉토리의 .env 파일에 google api key를 저장해야 합니다.
+* 프로젝트 루트 디렉토리의 .env 파일에 google api key를 저장해야 
 ```
 GOGGLE_API_KEY="YOUR_API_KEY"
 ```
+
 
 ### 애플리케이션 사용법
 
