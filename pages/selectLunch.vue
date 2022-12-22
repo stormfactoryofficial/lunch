@@ -45,8 +45,7 @@ const setRecommandFood = () => {
 const myLocation = ref([]);  // [ lng, lat ]
 
 const foodThumbnail = computed ( () => {
-	const imageName = recommandFood.value.name ? recommandFood.value.name : 'no_image';
-	const url = new URL( `../assets/images/${imageName}.png`, import.meta.url );
+	const url = new URL( `../assets/images/${recommandFood.value.name}.png`, import.meta.url );
 	return url.href;
 });
 
@@ -65,12 +64,13 @@ onMounted(()=> {
 			<header>
 				<hgroup>
 					<FoodThumbnail
+						:load="load"
 						:imgSrc="foodThumbnail"
 						:width="120"
 						:height="90"
 						style="margin-bottom: 10px;"
 					/>
-					<h1 class="text-gothic-bold">
+					<h1 v-show="load" class="text-gothic-bold">
 						오늘, {{ recommandFood?.name }} 어때요?
 					</h1>
 				</hgroup>
@@ -115,7 +115,7 @@ onMounted(()=> {
 		
 		<aside v-if="isTypeList">
 			<div class="type-list-wrap">
-				<CloseButton
+				<tmplCloseButton
 					@click.prevent="isTypeList = flase"
 					@touchend.prevent="isTypeList = flase"
 					style="color: #ffffff; top: -40px; right: 13px;"

@@ -9,13 +9,17 @@ const props = defineProps({
 	},
 	height: {
 		type: Number
+	},
+	load: {
+		type: Boolean,
+		default: true,
 	}
 });
 </script>
 
 <template>
 	<div :style="`width: ${width}px; height: ${height}px; margin:auto;`">
-		<img :src="imgSrc" />
+		<img v-if="load" :src="imgSrc" />
 	</div>
 </template>
 

@@ -90,7 +90,7 @@ onMounted( () => {
 
 <template>
 	<aside class="container" v-show="isAddrWindow">
-		<CloseButton
+		<tmplCloseButton
 			@click.prevent="isAddrWindow = flase"
 			@touchend.prevent="isAddrWindow = flase"
 			style="color: #333; top: 20px; right: 20px;"
@@ -99,7 +99,7 @@ onMounted( () => {
 	</aside>
 
 	<div class="container">
-		<Header title="점심 메뉴 추천" />
+		<tmplHeader title="점심 메뉴 추천" />
 		<main>
 			<div class="location-search">
 				<input
