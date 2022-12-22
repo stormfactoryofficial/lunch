@@ -29,7 +29,7 @@ Weekly Project - Lunch
 
 #### dependencies
 
-**** npm
+* npm
 * nuxt 3.0.0
 * @googlemaps/js-api-loader: 1.15.1
 * @nuxtjs/dotenv: 1.4.1
