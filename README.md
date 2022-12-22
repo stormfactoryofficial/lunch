@@ -7,7 +7,7 @@ Weekly Project - Lunch
 
 내 위치를 입력하면 음식의 종류를 랜덤으로 골라 가까운 음식점 정보를 제공하는 프로그램
 
-애플리케이션 링크 : https://weekly.stormfactory.co.kr/lunch/
+애플리케이션 링크 : https://weekly.stormfactory.co.kr/lunch/ (ctrl + 클릭 
 
 ![This is a alt text.](./preview.jpg "미리보기 이미지 입니다.")
 
